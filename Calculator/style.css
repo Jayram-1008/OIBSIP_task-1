@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculator{
+   
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 0px auto;
+     height: 100vh;
+     position: relative;
+     background-color: rgb(81, 167, 139);
+}
+.output{
+    background-color: rgb(255, 255, 255);
+    height:140px;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.output1{
+    height: 45%;
+    padding: 10px;
+    font-size: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: right;
+    width: 415px;
+    margin: auto;
+    background-color: rgb(164, 223, 223);
+}
+.output2{
+    height: 70%;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 3em;
+    text-align: right;
+    width: 415px;
+    margin: auto;
+    background-color: rgb(164, 223, 223);
+}
+.calculator .input .input-val{
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    background: rgb(255, 255, 255); 
+}
+.calculator .input .input-val button{
+    width: 70px;
+    height:50px;
+    padding: 10px 15px;
+    margin-left:10px ;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(186, 232, 232);
+    border: none;
+}
+.calculator .input .input-val button img{
+    width: 25px;
+    height:20px;
+    object-fit: cover;
+}
+.calculator .input .input-val button:hover{
+    background-color: rgb(113, 180, 158);
+    cursor: pointer;
+}
+.operation {
+    background-color: red;
+  }
+  

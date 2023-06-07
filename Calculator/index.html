@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output" >
+            <label class="output1"id="in" >
+                
+            </label>
+            <label class="output2" id="out">
+                0
+            </label>
+        </div>
+        <div class="input">
+            <div class="input-val">
+                <button onclick="pushEle('(')" type="button" >(</button>
+                <button onclick="pushEle(')')" type="button" >)</button>
+                <button onclick="AllClear()" type="button" value="ac">AC</button>
+                <button onclick="backSpace()" type="button" value="X">
+                    <img src="icon/double-arrow.png" alt="">
+                </button>
+                <button onclick="squareRoot()" type="button" value="root">
+                    <img src="icon/square-root.png" alt="">
+                </button>
+            </div>
+            <div class="input-val">
+                <button onclick="pushEle(7)" type="button" value=7>7</button>
+                <button onclick="pushEle(8)" type="button" value=8>8</button>
+                <button onclick="pushEle(9)" type="button" value=9>9</button>
+                <button onclick="pushEle('*')" type="button" value="*">*</button>
+                <button onclick="pushEle('%')" class="operation" type="button" value="%">%</button>
+            </div>
+            <div class="input-val">
+                <button onclick="pushEle(4)" type="button" value=4>4</button>
+                <button onclick="pushEle(5)" type="button" value=5>5</button>
+                <button onclick="pushEle(6)" type="button" value=6>6</button>
+                <button onclick="pushEle('-')" type="button" value="-">-</button>
+                <button onclick="pushEle('/')" type="button" value="/">
+                    <img src="icon/divide.png" alt="">
+                </button>
+            </div>
+            <div class="input-val">
+                <button onclick="pushEle(1)" type="button" value=1>1</button>
+                <button onclick="pushEle(2)" type="button" value=2>2</button>
+                <button onclick="pushEle(3)" type="button" value=3>3</button>
+                <button onclick="pushEle('+')" type="button" value="+">+</button>
+                <button onclick="pushEle('.')" type="button" value=".">.</button>
+            </div>
+            <div class="input-val" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding-bottom: 20px;"> 
+                <button onclick="pushEle(0)" type="button" value=0>0</button>                
+                <button onclick="pushEle(15)" type="button" value="00">00</button>
+                <button type="button" value="+-">+/-</button>
+                <button onclick="finalAnswer()" type="button" value="ans" style="width: 155px;">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
